@@ -8,9 +8,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.11.0'
   gem 'guard-rspec', '1.2.1'
-  gem 'guard-spork', '1.2.0'
-  #Added to deal with bug - http://stackoverflow.com/questions/14590399/error-on-start-when-using-spork-and-guard
-  gem 'childprocess', '0.3.6'
+  gem 'guard-spork', '1.4.2'
   gem 'spork', '0.9.2'
 end
 
