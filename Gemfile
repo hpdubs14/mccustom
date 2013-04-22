@@ -7,6 +7,11 @@ gem 'rails', '3.2.13'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.11.0'
+  gem 'guard-rspec', '1.2.1'
+  gem 'guard-spork', '1.2.0'
+  #Added to deal with bug - http://stackoverflow.com/questions/14590399/error-on-start-when-using-spork-and-guard
+  gem 'childprocess', '0.3.6'
+  gem 'spork', '0.9.2'
 end
 
 # Gems used only for assets and not required
@@ -17,14 +22,16 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
 
+# Test gems on Macintosh OS X
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'rb-fsevent', '0.9.1', :require => false
+  gem 'growl', '1.0.3'
 end
 
 group :production do
