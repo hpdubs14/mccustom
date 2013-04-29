@@ -13,7 +13,7 @@ describe "Static Pages" do
   describe "Service Details Page" do
     it "should be present" do
       visit '/services'
-      page.should have_content('Service')
+      page.should have_content('Services')
     end
   end
 end
