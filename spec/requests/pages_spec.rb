@@ -9,4 +9,11 @@ describe "Static Pages" do
       page.should have_content('MC Custom')
     end
   end
+
+  describe "Service Details Page" do
+    it "should be present" do
+      visit '/services'
+      page.should have_content('Service')
+    end
+  end
 end
