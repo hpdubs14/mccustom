@@ -29,9 +29,8 @@ group :assets do
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+  # gem 'pg', '0.12.2'
   gem 'sqlite3'
-  gem 'activerecord-sqlite3-adapter'
   gem 'newrelic_rpm'
 end
 
