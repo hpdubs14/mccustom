@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'jquery-rails'
+gem 'sqlite3'
+
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
@@ -30,7 +32,6 @@ end
 
 group :production do
   # gem 'pg', '0.12.2'
-  gem 'sqlite3'
   gem 'newrelic_rpm'
 end
 
