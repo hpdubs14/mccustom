@@ -1,0 +1,109 @@
+@import "bootstrap";
+
+/* Universal styles*/
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 80px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.navbar-inner {
+  // background-color: #F57C13;
+  // background-image: none;
+  // background-repeat: no-repeat;
+  // filter: none;
+}
+
+/* Default color palatte variables*/
+
+
+
+/* Header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  // font
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+header ul {
+  padding-top: 9px;
+  list-style: none;
+}
+
+#main_number {
+  float: left;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#email {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  &:hover {
+    color:  #1D44A4;
+    text-decoration: none;
+  }
+}
+
+header .icon {
+  padding-top: 9px;
+}
+
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
